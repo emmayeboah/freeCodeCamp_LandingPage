@@ -12,6 +12,13 @@
   overflow: hidden;
 
 }
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+
 ul{
   list-style: none;
 }
@@ -31,18 +38,15 @@ a{
   padding:  0.4rem 1.5rem;
   background-color: #f1c40f;
 }
-body{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-}
+
 
 /* HEADER NAVBAR */
-#main-header{
+#header{
   background-color: #eeeeee;
   color: #333;
 }
 
-#navbar{
+#nav-bar{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,15 +54,15 @@ body{
   overflow: hidden;
 }
 
-#navbar ul{
+#nav-bar ul{
   display: flex;
 }
 
-#navbar ul li{
+#nav-bar ul li{
   padding: 1rem 2rem;
 }
 
-#navbar ul li a{
+#nav-bar ul li a{
   color: #333;
   font-size: 1.2rem;
 }
@@ -80,7 +84,7 @@ body{
   margin-bottom: 1rem;
 }
 
-#features{
+#Features{
   padding: 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -88,22 +92,22 @@ body{
   flex-direction: column;
 }
 
-#features .feature{
+#Features .feature{
   display: inline-flex;
   justify-self:center;
   align-items: center;
 }
 
-#features .feature i{
+#Features .feature i{
   color: #ff8c00;
 }
 
-#features .feature div{
+#Features .feature div{
   padding: 1rem;
   margin-left: 3rem;
 }
 
-#features .feature div h2{
+#Features .feature div h2{
   font-size: 1.5rem;
   margin-bottom: .5rem;
 
@@ -192,15 +196,15 @@ body{
     padding:1.5rem 0.3rem;
   }
 
-  #navbar ul li {
+  #nav-bar ul li {
     padding: 1rem 1rem;
   }
 
-  #features .feature{
+  #Features .feature{
   flex-direction: column;
   }
 
-  #features .feature div{
+  #Features .feature div{
     padding: 1rem;
     margin: 0.5rem;
     text-align: center;
@@ -243,4 +247,28 @@ body{
     margin: 1rem 0;
 
   }
+}
+*{
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+
 }
